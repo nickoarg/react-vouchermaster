@@ -8,7 +8,7 @@ class App extends React.Component {
   public render() {
     return (
       <div className="App">
-        <Header pageTitle="Welcome VoucherMaster Client" logoSrc={logo} />
+        <Header pageTitle="Welcome VoucherMAster" logoSrc={logo} />
         <div className="container-fluid">
           <div className="row">
             <div className="col">
@@ -16,6 +16,7 @@ class App extends React.Component {
             </div>
           </div>
         </div>
+        
       </div>
     );
   }

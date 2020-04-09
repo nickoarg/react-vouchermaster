@@ -29,9 +29,10 @@ export default class AppContent extends React.Component<any, any> {
     this.authService.login();
   };
 
-  public callApi = () => {
+  public callApi = (endpoint: string) => {
+
     this.apiService
-      .callApi()
+      .callApi(endpoint)
       .then(data => {
         this.setState({ api: data.data });
         toastr.success('Api return successfully data, check in section - Api response');
